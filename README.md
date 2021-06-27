@@ -8,8 +8,8 @@ $ sudo apt-get update && sudo apt-get install -y apt-transport-https && sudo apt
 ``` 
 $ sudo apt-get install -y virtualbox virtualbox-ext-pack
 ```
-![image](https://user-images.githubusercontent.com/48765431/123540987-7855d000-d774-11eb-8214-bf2b7cc75e2c.png)
-![image](https://user-images.githubusercontent.com/48765431/123541002-928fae00-d774-11eb-909d-df432473dac2.png)
+![image](https://user-images.githubusercontent.com/48765431/123541247-1302de80-d776-11eb-8628-3494cbf1b613.png)
+![image](https://user-images.githubusercontent.com/48765431/123541269-362d8e00-d776-11eb-886e-9f3ca6ccc6b6.png)
 ### Reboot the system and check the Enable Nested VT-x/AMD-V option in virtual box settings
 ```
 $ reboot
