@@ -44,3 +44,31 @@ $ minikube start
 $ minikube status 
 ```
 ![image](https://user-images.githubusercontent.com/48765431/123541178-b7385580-d775-11eb-8598-b528bf5b08a8.png)
+
+
+
+## OpenStack Installation on VM(Ubuntu 20.04)
+
+### Update the system
+```
+$ sudo apt-get update
+$ sudo apt-get update
+```
+### Download the devstack file from the the github 
+```
+$ sudo apt install git
+$ git clone https://git.openstack.org/openstack-dev/devstack
+```
+### Move the local.conf file from sample folder to devstack folder
+```
+$ cd devstack/
+$ cd samples/
+$ cp local.conf ../
+$ cd ..
+```
+### Modify the local.conf file 
+![image](https://user-images.githubusercontent.com/48765431/125175174-e5e60f80-e1fc-11eb-8156-32e30c61c6c2.png)
+### Run the stack file 
+```
+$ ./stack.sh 
+```
