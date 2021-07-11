@@ -54,6 +54,11 @@ $ minikube status
 $ sudo apt-get update
 $ sudo apt-get update
 ```
+### Create Stack user and assign sudo priviledge
+$ sudo useradd -s /bin/bash -d /opt/stack -m stack
+$ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
+$ sudo su - stack
+
 ### Download the devstack file from the the github 
 ```
 $ sudo apt install git
