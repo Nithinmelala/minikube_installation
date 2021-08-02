@@ -1,4 +1,4 @@
-# Minikube on Virtualbox(Ubuntu-20.04)
+# Minikube and OpenStack on Virtualbox(Ubuntu-20.04)
 
 ### Install Required Packages
 ``` 
@@ -52,7 +52,7 @@ $ minikube status
 ### Update the system
 ```
 $ sudo apt-get update
-$ sudo apt-get update
+$ sudo apt-get upgrade
 ```
 ### Create Stack user and assign sudo priviledge
 $ sudo useradd -s /bin/bash -d /opt/stack -m stack
