@@ -1,4 +1,4 @@
-# Minikube_on_Virtualbox(Ubuntu-20.04)
+# Minikube on Virtualbox(Ubuntu-20.04)
 
 ### Install Required Packages
 ``` 
