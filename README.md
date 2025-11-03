@@ -123,8 +123,7 @@ $ cd ..
 
 ### Modify the local.conf file 
 ![image](https://user-images.githubusercontent.com/48765431/125175174-e5e60f80-e1fc-11eb-8156-32e30c61c6c2.png)
-### Run the stack file 
-```
+
 ## Run DevStack deployment
 $ ./stack.sh
 
