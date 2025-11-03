@@ -1,8 +1,44 @@
-# Minikube and OpenStack on Virtualbox(Ubuntu-20.04)
+# Minikube & OpenStack on VirtualBox (Ubuntu 20.04)
 
-### Install Required Packages
-``` 
-$ sudo apt-get update && sudo apt-get install -y apt-transport-https && sudo apt install -y curl 
+A clean, reproducible guide to install **VirtualBox**, **kubectl**, and **Minikube** on Ubuntu 20.04, then deploy **OpenStack** via **DevStack** inside a VirtualBox VM.  
+_All shell snippets are `bash` with a leading `$` prompt, and each block starts with a `##` header comment you can keep as inline documentation when running the commands._
+
+---
+
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Install Required Packages (Host)](#install-required-packages-host)
+3. [Install VirtualBox (Host)](#install-virtualbox-host)
+4. [Enable Nested Virtualization](#enable-nested-virtualization)
+5. [Install kubectl (Host)](#install-kubectl-host)
+6. [Install Minikube (Host)](#install-minikube-host)
+7. [Start & Verify Minikube](#start--verify-minikube)
+8. [OpenStack via DevStack (Inside a VirtualBox VM)](#openstack-via-devstack-inside-a-virtualbox-vm)
+9. [Edit `local.conf` (Example)](#edit-localconf-example)
+10. [Post-Deployment Checks](#post-deployment-checks)
+11. [Troubleshooting](#troubleshooting)
+12. [Cleanup](#cleanup)
+13. [Notes & Best Practices](#notes--best-practices)
+
+---
+
+## Prerequisites
+
+- **Host OS:** Ubuntu 20.04 LTS  
+- **CPU:** Intel VT-x / AMD-V enabled in BIOS/UEFI  
+- **RAM:** ≥ 8 GB (16 GB recommended if running Minikube and an OpenStack VM together)  
+- **Disk:** ≥ 40 GB free  
+- **Network:** Internet access  
+- **Access:** `sudo` privileges on host and VM
+
+---
+
+## Install Required Packages (Host)
+
+```bash
+## Install Required Packages (Host)
+$ sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+
 ```
 ### Install VirtualBox Hypervisor
 ``` 
