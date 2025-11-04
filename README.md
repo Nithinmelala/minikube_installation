@@ -31,11 +31,7 @@ _All shell snippets are `bash` with a leading `$` prompt, and each block starts 
 - **Network:** Internet access  
 - **Access:** `sudo` privileges on host and VM
 
----
 
-## Install Required Packages (Host)
-
-```bash
 ## Install Required Packages (Host)
 $ sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 
@@ -52,7 +48,7 @@ $ sudo apt-get install -y virtualbox virtualbox-ext-pack
 Important: After reboot, open VirtualBox → select the VM you will use for OpenStack → Settings → System → Processor → enable “Enable Nested VT-x/AMD-V”.
 
 $ sudo reboot
-```
+
 ![image](https://user-images.githubusercontent.com/48765431/123541019-b9e67b00-d774-11eb-8dbb-9bc0dafdf23e.png)
 
 
@@ -66,8 +62,9 @@ $ chmod +x kubectl && sudo mv kubectl /usr/bin/
 $ which kubectl
 $ kubectl version --client
 
-```
+
 ![image](https://user-images.githubusercontent.com/48765431/123540610-80ad0b80-d772-11eb-897e-417d4999c5b2.png)
+
 ![image](https://user-images.githubusercontent.com/48765431/123540640-a3d7bb00-d772-11eb-9843-31ee779bea26.png)
 
 
@@ -84,7 +81,7 @@ $ minikube version
 ## Start Minikube (VirtualBox driver)
 $ minikube start --driver=virtualbox
 
-```
+
 ![image](https://user-images.githubusercontent.com/48765431/123540685-daadd100-d772-11eb-9855-73163469950b.png)
 
 
